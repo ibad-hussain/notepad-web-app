@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad Web App</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="heading"><span id="notepad">NOTEPAD&nbsp;</span><span>WEB APP</span></div>
+
+    <div class="container">
+        <div class="form">
+            <form action="/create" method="post">
+                <input type="text" placeholder="Title goes here" name="title" id="title" required>
+                <textarea placeholder="Details goes here" name="details" id="details"></textarea>
+                <input type="submit" value="Create Tasks" id="button">
+            </form>
+        </div>
+
+        <div class="tasks">
+            <% if (files.length > 0) { %>
+                <% files.forEach(function(val) { %>
+                    <div class="task">
+                        <p id="name"><%= val.slice(0, -4) %></p>
+                        <div class="links">
+                            <a href="/file/<%= val.slice(0, -4) %>">Open</a>
+                            <a href="/edit/<%= val.slice(0, -4) %>">Edit</a>
+                            <a href="/delete/<%= val.slice(0, -4) %>" id="delete">Delete</a>
+                        </div>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <h3>No tasks yet.</h3>
+            <% }%>
+        </div>
+        
+    </div>
+</body>
+</html>

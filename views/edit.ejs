@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style3.css">
+</head>
+<body>
+    <div class="heading"><span id="notepad">NOTEPAD&nbsp;</span><span>WEB APP</span></div>
+
+    <div class="container">
+        <div class="back">
+            <img src="/images/back arrow.png" alt="">
+            <a href="/">Go back Home</a>
+        </div>
+
+        <div class="form">
+            <form action="/edit" method="post">
+                <label for="text">Edit Title</label>
+                <input type="text" name="title" id="title" value="<%= filename %>">
+                <label for="textarea">Edit Details</label>
+                <textarea name="details" id="details"><%= filedata %></textarea>
+                <input type="submit" value="Update Task" id="button">
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
