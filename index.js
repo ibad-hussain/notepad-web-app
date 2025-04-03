@@ -18,6 +18,10 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, "public")));
 
 
+// Setting the directory for EJS template files (views) [imp for vercel deployment]
+app.set('views', path.join(__dirname, 'views'));
+
+
 // Initialized an empty string
 let oldName = "";
 
