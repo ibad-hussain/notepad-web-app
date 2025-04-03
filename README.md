@@ -25,9 +25,9 @@ A simple Notepad Web Application built with Node.js and Express.js that allows u
 <br>
 
 ## 🚀 Deployment
-The app is deployed on <b>Render</b> and can be accessed via:
+The app is deployed on <b>Vercel</b> and can be accessed via:
 <br>
-www.google.com
+https://webapp-notepad.vercel.app/
 
 <br>
 
