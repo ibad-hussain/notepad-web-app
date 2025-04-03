@@ -26,7 +26,7 @@ let oldName = "";
 // Create a '/' route
 app.get("/", function(req, res) {
     fs.readdir("./files", function(err, files) {
-        res.render("index", {files: files});
+        res.render("index", { files: files || [] });
     });
 });
 
