@@ -5,7 +5,7 @@ A simple Notepad Web Application built with Node.js and Express.js that allows u
 <br>
 
 ## 🚀 Screenshots
-![Project screenshot](./Project_screenshots/Image1.png)
+<img src="./Project_screenshots/Image1.png" alt="Project screenshot" width="200">
 
 <br>
 
