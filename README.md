@@ -18,6 +18,12 @@ A simple Notepad Web Application built with Node.js and Express.js that allows u
 
 <br>
 
+## 🚀 Lessons Learned
+- Deployed the project on Vercel, only to discover that Vercel doesn't support file read/write operations (fs module)
+- This was a valuable lesson about deployment environments and backend limitations in serverless platforms.
+
+<br>
+
 ## 🚀 Tech Stack
 - <b>Frontend:</b> EJS & CSS
 - <b>Backend:</b> Node.js & Express.js
